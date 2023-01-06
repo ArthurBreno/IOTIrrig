@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AtividadeMonitorar"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:id="@+id/AtividadeMonitorar">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tema"
+            app:titleTextColor="@color/tema"
+            tools:ignore="MissingConstraints"
+            android:clickable="true"
+            android:focusable="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IOTIrrig"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp"
+                android:textStyle="bold"/>
+        </androidx.appcompat.widget.Toolbar>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/menu_activty2"
+        android:layout_gravity="start"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/btnDeletarMonitoramento"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginEnd="25dp"
+
+            android:clickable="true"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_lixeira" />
+
+        <ImageView
+            android:id="@+id/btnModificarMonitoramento"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="75dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnDeletarMonitoramento"
+            app:layout_constraintHorizontal_bias="0.73"
+            app:layout_constraintStart_toEndOf="@+id/btnCriarMonitoramento"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_chave_de_boca"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/btnCriarMonitoramento"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="75dp"
+            android:clickable="true"
+
+            android:onClick="openCriarMonitorar"
+
+            app:layout_constraintBottom_toTopOf="@+id/btnMonitorar1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_adicionar" />
+
+        <Button
+            android:id="@+id/btnMonitorar7"
+            android:layout_width="130dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/btn_forma_do_btn"
+            android:text="Button"
+            android:textColor="#FFFFFF"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnMonitorar5"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnMonitorar8"
+            android:layout_width="130dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="45dp"
+            android:background="@drawable/btn_forma_do_btn"
+            android:text="Button"
+            android:textColor="#FFFFFF"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnMonitorar6"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnMonitorar5"
+            android:layout_width="130dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/btn_forma_do_btn"
+            android:onClick="colocarBtn5"
+            android:text="Button"
+            android:textColor="#FFFFFF"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnMonitorar3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnMonitorar6"
+            android:layout_width="130dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="45dp"
+            android:background="@drawable/btn_forma_do_btn"
+            android:onClick="colocarBtn6"
+            android:text="Button"
+            android:textColor="#FFFFFF"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnMonitorar4"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnMonitorar1"
+            android:layout_width="130dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btn_forma_do_btn"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="colocarBtn1"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnDeletarMonitoramento"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnMonitorar3"
+            android:layout_width="130dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/btn_forma_do_btn"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="colocarBtn3"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnMonitorar1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnMonitorar2"
+            android:layout_width="130dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="45dp"
+            android:background="@drawable/btn_forma_do_btn"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="colocarBtn2"
+            android:text="Button"
+            android:textColor="#FFFFFF"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnDeletarMonitoramento"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnMonitorar4"
+            android:layout_width="130dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="45dp"
+            android:background="@drawable/btn_forma_do_btn"
+            android:clickable="true"
+            android:onClick="colocarBtn4"
+            android:text="Button"
+            android:textColor="#FFFFFF"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnMonitorar2"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

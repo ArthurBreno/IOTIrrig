@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AtividadeAcompanharControlarEspecial">
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+
+        android:id="@+id/atividadeAcompanharControlarEspecial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".AtividadeAcompanharControlarEspecial"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-36dp"
+        tools:openDrawer="start">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.39">
+
+                <EditText
+                    android:id="@+id/edHoraSuperior"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:hint="H"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text=":"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edMinutoSuperior"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:hint="min"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text=":"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edSegundoSuperior"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:hint="sec"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layLinearInferior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.68">
+
+                <EditText
+                    android:id="@+id/edHoraInferior"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:hint="H"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text=":"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edMinutoInferior"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:hint="min"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text=":"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edSegundoInferior"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:hint="sec"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnIniciarFechar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/btn_forma_do_btn"
+                android:enabled="true"
+                android:text="INICAR"
+                android:textColor="#FFFFFF"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.842" />
+
+            <TextView
+                android:id="@+id/tvTituloBarraInferior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75dp"
+                android:text="ACIONAMENTO PROGRAMADO"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/tvSuperior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ACIONAMENTO CRONOMETRADO"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTituloBarraInferior"
+                app:layout_constraintVertical_bias="0.089" />
+
+            <TextView
+                android:id="@+id/tvInferior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="TEMPO DESLIGADO"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.513" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tema"
+                app:titleTextColor="@color/tema"
+                android:clickable="true"
+                android:focusable="true"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="IOTIrrig"
+                    android:textColor="#FFFFFF"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+            </androidx.appcompat.widget.Toolbar>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/nav_header_main"
+            app:menu="@menu/menu_activty2" />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

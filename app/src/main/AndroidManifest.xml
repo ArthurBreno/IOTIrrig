@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.Getai.IOTirrig">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icone_playstore"
+        android:label="IOTIrrig"
+        android:roundIcon="@mipmap/icone_playstore"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name="com.Getai.IOTirrig.Instruicoes"
+            android:exported="true" />
+        <activity android:name="com.Getai.IOTirrig.AtividadeAcompanharControlarEspecial" />
+        <activity android:name="com.Getai.IOTirrig.AtividadeAcompanharMonitoramento" />
+        <activity android:name="com.Getai.IOTirrig.AtividadeAcompanharControlar" />
+        <activity android:name="com.Getai.IOTirrig.AtividadeSobre" />
+        <activity android:name="com.Getai.IOTirrig.AtividadeCriarControle" />
+        <activity android:name="com.Getai.IOTirrig.AtividadeCriarMonitoramento" />
+        <activity android:name="com.Getai.IOTirrig.AtividadeControlar" />
+        <activity android:name="com.Getai.IOTirrig.AtividadeMonitorar" />
+        <activity android:name="com.Getai.IOTirrig.TelaInicial">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

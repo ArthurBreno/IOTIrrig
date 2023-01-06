@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inf"
+            android:icon="@drawable/ic_baseline_house_24"
+            android:title="Início" />
+        <item
+            android:id="@+id/nav_inf2"
+            android:icon="@drawable/ic_controle"
+            android:title="Controle" />
+        <item
+            android:id="@+id/nav_inf3"
+            android:icon="@drawable/ic_monitorar"
+            android:title="Monitoramento" />
+
+        <item
+            android:id="@+id/instrucoes"
+            android:icon="@drawable/ic_calendario"
+            android:title="Instruções"/>
+
+        <item
+            android:id="@+id/nav_inf4"
+            android:icon="@drawable/ic_sobre"
+            android:title="Sobre" />
+
+
+
+
+
+    </group>
+</menu>

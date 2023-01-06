@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AtividadeCriarMonitoramento"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start" >
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AtividadeCriarMonitoramento"
+        android:id="@+id/atividadeCiarMonitoramento"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="65dp"
+                android:text="CRIAR CONTROLE"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Número de campos"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.185"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lay01"
+                app:layout_constraintVertical_bias="0.26999998" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unidades de médida"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                app:layout_constraintVertical_bias="0.18" />
+
+            <Button
+                android:id="@+id/btnSalvarCriarMonitoramento"
+                android:layout_width="317dp"
+                android:layout_height="68dp"
+                android:background="@drawable/btn_forma_do_btn"
+                android:text="CONFIRMAR  E SALVAR MONITORAMENTO"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.917" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/textView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lay01">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Inserir URL:"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edUrlMonitoramento"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Inserir URL para leitura"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:paddingStart="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.454"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:layout_marginStart="0dp"
+
+                    android:layout_marginTop="0dp"
+
+                    android:gravity="center"
+                    android:text="Titulo:"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/edTituloMonitoramento"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:hint="Ex: Bomba principal"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:paddingStart="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lay01"
+                app:layout_constraintVertical_bias="0.55">
+
+                <EditText
+                    android:id="@+id/edUnidade1"
+                    android:layout_width="60dp"
+                    android:layout_height="44dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/caixinha_unidade"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:hint="s"
+                    android:includeFontPadding="false"
+                    android:inputType="textPersonName"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/edUnidade2"
+                    android:layout_width="60dp"
+                    android:layout_height="44dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/caixinha_unidade"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:hint="m³/s"
+                    android:inputType="textPersonName"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/edUnidade3"
+                    android:layout_width="60dp"
+                    android:layout_height="44dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/caixinha_unidade"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:hint="Min"
+                    android:inputType="textPersonName"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/edUnidade4"
+                    android:layout_width="60dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/caixinha_unidade"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:hint="L/h"
+                    android:inputType="textPersonName"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spnNumero"
+                android:layout_width="77dp"
+                android:layout_height="32dp"
+                android:clickable="true"
+                android:entries="@array/numeros"
+                android:focusable="true"
+                android:spinnerMode="dropdown"
+                app:layout_constraintBottom_toTopOf="@+id/textView3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.811"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lay01"
+                app:layout_constraintVertical_bias="0.68" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/tema"
+                    app:titleTextColor="@color/tema"
+                    android:clickable="true"
+                    android:focusable="true"
+                    tools:ignore="MissingConstraints">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:text="IOTIrrig"
+                        android:textColor="#FFFFFF"
+                        android:textSize="26sp"
+                        android:textStyle="bold" />
+                </androidx.appcompat.widget.Toolbar>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/nav_view"
+            app:headerLayout="@layout/nav_header_main"
+            app:menu="@menu/menu_activty2"
+            android:layout_gravity="start"/>
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

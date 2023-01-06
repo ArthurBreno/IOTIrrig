@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".AtividadeControlar"
+    tools:openDrawer="start">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/atividadeControlar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:context=".AtividadeControlar"
+        tools:openDrawer="start">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/btnModificarControle"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="75dp"
+
+                android:clickable="true"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ic_chave_de_boca" />
+
+            <ImageView
+                android:id="@+id/btnCriarControle"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="25dp"
+
+                android:layout_marginTop="75dp"
+
+                android:clickable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ic_adicionar" />
+
+            <ImageView
+                android:id="@+id/btnDeletarControle"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="75dp"
+
+                android:layout_marginEnd="25dp"
+
+                android:clickable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ic_lixeira" />
+
+            <Button
+                android:id="@+id/btnControlar7"
+                android:layout_width="130dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/btn_forma_do_btn"
+                android:text="Button"
+                android:textColor="#FFFFFF"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnControlar5"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/btnControlar8"
+                android:layout_width="130dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="45dp"
+                android:background="@drawable/btn_forma_do_btn"
+                android:text="Button"
+                android:textColor="#FFFFFF"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnControlar6"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/btnControlar1"
+                android:layout_width="130dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/btn_forma_do_btn"
+                android:enabled="false"
+                android:onClick="setBtn1Controlar"
+                android:text="Button"
+                android:textColor="@color/white"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnModificarControle"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/btnControlar3"
+                android:layout_width="130dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/btn_forma_do_btn"
+                android:enabled="false"
+                android:onClick="setBtn3Controlar"
+                android:text="Button"
+                android:textColor="@color/white"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnControlar1"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+
+            <Button
+                android:id="@+id/btnControlar2"
+                android:layout_width="130dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="45dp"
+                android:background="@drawable/btn_forma_do_btn"
+                android:enabled="false"
+                android:onClick="setBtn2Controlar"
+                android:text="Button"
+                android:textColor="@color/white"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnModificarControle"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/btnControlar4"
+                android:layout_width="130dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="45dp"
+                android:background="@drawable/btn_forma_do_btn"
+                android:enabled="false"
+                android:onClick="setBtn4Controlar"
+                android:text="Button"
+                android:textColor="@color/white"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnControlar2"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/btnControlar5"
+                android:layout_width="130dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/btn_forma_do_btn"
+                android:onClick="setBtn5Controlar"
+                android:text="Button"
+                android:textColor="#FFFFFF"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnControlar3"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/btnControlar6"
+                android:layout_width="130dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="45dp"
+                android:background="@drawable/btn_forma_do_btn"
+                android:onClick="setBtn6Controlar"
+                android:text="Button"
+                android:textColor="#FFFFFF"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnControlar4"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tema"
+                app:titleTextColor="@color/tema"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="IOTIrrig"
+                    android:textColor="#FFFFFF"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+            </androidx.appcompat.widget.Toolbar>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/nav_header_main"
+            app:menu="@menu/menu_activty2" />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
